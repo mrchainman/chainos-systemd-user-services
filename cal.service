@@ -1,0 +1,7 @@
+[Unit]
+Description=Sync calendar
+Wants=cal.timer
+[Service]
+ExecStart=/bin/bash calsync.sh
+[Install]
+WantedBy=multi-user.target

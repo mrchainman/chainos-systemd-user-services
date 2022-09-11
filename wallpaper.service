@@ -1,0 +1,7 @@
+[Unit]
+Description=Change the wallpaper on timer activation
+Wants=wallpaper.timer
+[Service]
+ExecStart=/bin/bash -c chainos-wallpaper
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,7 @@
+[Unit]
+Description=Sync mail
+Wants=mail.timer
+[Service]
+ExecStart=/bin/bash sync-mail.sh
+[Install]
+WantedBy=multi-user.target
