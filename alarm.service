@@ -1,7 +1,0 @@
-[Unit]
-Description=Check appointments
-Wants=alarm.timer
-[Service]
-ExecStart=/usr/bin/python alarm.py
-[Install]
-WantedBy=multi-user.target

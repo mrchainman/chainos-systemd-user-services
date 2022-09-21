@@ -1,0 +1,10 @@
+[Unit]
+Description=Brightness Bar
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/chainos-xob-aud
+Restart=on-failure
+
+[Install]
+WantedBy=graphical-session.target
