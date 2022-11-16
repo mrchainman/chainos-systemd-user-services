@@ -1,0 +1,10 @@
+[Unit]
+Description=Battery status
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/chainos-battery
+Restart=on-failure
+
+[Install]
+WantedBy=graphical-session.target
